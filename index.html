@@ -4,31 +4,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dziękujemy za pobranie!</title>
+<title>Carillon – Pobieranie</title>
 <style>
 body {
   background: #101827;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   text-align: center;
   padding: 100px 20px;
 }
 h1 { color: #48df91; }
+a {
+  display: inline-block;
+  padding: 16px 30px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+}
 </style>
 </head>
 <body>
 <h1>✓ Dziękujemy za pobranie!</h1>
-<p>Pobieranie Twojego programu powinno się rozpocząć.</p>
-<p>Jeśli pobieranie nie ruszyło, kliknij poniżej:</p>
-<a id="download" href="TUTAJ_WKLEJ_LINK_DO_EXE">
-  POBIERZ PROGRAM
+<p>Carillon – instalator Windows</p>
+<p>Twoje pobieranie powinno się rozpocząć.</p>
+
+<a id="download"
+href="https://github.com/kowalskiwojcirch-coder/moja-aplikacja/releases/download/v1.0/Carillon_1.0.0_x64-setup.exe">
+POBIERZ CARILLON
 </a>
+
 <script>
-window.onload = () => {
-  setTimeout(() => {
-    document.getElementById("download").click();
-  }, 1000);
-};
+setTimeout(() => {
+  document.getElementById("download").click();
+}, 1000);
 </script>
 </body>
 </html>
